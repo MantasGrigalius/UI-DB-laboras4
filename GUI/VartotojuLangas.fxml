@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.VartotojuLangasController">
+    <children>
+        <MenuBar prefHeight="25.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button fx:id="gryzimoMygtukasV" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#gryztiPagrindiniLanganV" prefHeight="25.0" prefWidth="64.0" text="Back" />
+        <TextField fx:id="filtroLaukas" layoutX="186.0" layoutY="41.0" onKeyTyped="#filtruotiLentele" promptText="Enter name..." />
+        <ChoiceBox fx:id="projektoLentelesPasirinkimai" layoutX="14.0" layoutY="41.0" prefWidth="150.0" />
+        <TableView fx:id="vartotojuLentele" layoutX="11.0" layoutY="76.0" prefHeight="274.0" prefWidth="577.0">
+            <columns>
+                <TableColumn fx:id="idStulpelis" prefWidth="65.0" text="ID" />
+                <TableColumn fx:id="vardoStulpelis" prefWidth="205.0" text="Name" />
+                <TableColumn fx:id="pavardesStulpelis" prefWidth="206.0" text="Surname" />
+                <TableColumn fx:id="aktyvumoStulpelis" prefWidth="100.0" text="Active" />
+            </columns>
+        </TableView>
+        <Button fx:id="kurtiNaujaVartotoja" layoutX="390.0" layoutY="361.0" mnemonicParsing="false" onAction="#kurtiNaujaVartotoja" prefHeight="25.0" prefWidth="196.0" text="New user" />
+        <Button fx:id="editMygtukas" layoutX="186.0" layoutY="361.0" mnemonicParsing="false" onAction="#redaguotiInformacija" prefHeight="25.0" prefWidth="196.0" text="Edit data" />
+    </children>
+</AnchorPane>

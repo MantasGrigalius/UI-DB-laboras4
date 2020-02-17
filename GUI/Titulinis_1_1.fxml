@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="329.0" prefWidth="574.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.TitulinisController_1_1">
+   <children>
+      <Button fx:id="uzbaigimoMygtukas" layoutX="461.0" layoutY="242.0" mnemonicParsing="false" onAction="#uzbaigtiUzduoti" prefHeight="73.0" prefWidth="99.0" text="Finish task" />
+      <Label fx:id="pavadinimoVieta" layoutX="13.0" layoutY="14.0" prefHeight="17.0" prefWidth="549.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="komentaruLentele" layoutX="13.0" layoutY="49.0" prefHeight="190.0" prefWidth="549.0" />
+      <TextArea fx:id="komentaruLaukas" layoutX="14.0" layoutY="242.0" prefHeight="73.0" prefWidth="330.0" />
+      <Button fx:id="komentaroMygtukas" layoutX="352.0" layoutY="242.0" mnemonicParsing="false" onAction="#sukurtiKomentara" prefHeight="73.0" prefWidth="99.0" text="Comment" />
+   </children>
+</AnchorPane>

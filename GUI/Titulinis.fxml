@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.TitulinisController">
+    <children>
+        <MenuBar prefHeight="25.0" prefWidth="602.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Pane fx:id="paspaustasVartotojai" layoutX="14.0" layoutY="37.0" onMouseClicked="#eitiVartotojuLangan" prefHeight="350.0" prefWidth="284.0" style="-fx-background-color: white;">
+            <children>
+                <PieChart fx:id="pyragelioDiagrama" layoutX="18.0" layoutY="66.0" prefHeight="277.0" prefWidth="248.0" style="-fx-background-color: #f7f6f2; -fx-border-color: crimson;" />
+
+                <Label layoutX="14.0" layoutY="8.0" prefHeight="26.0" prefWidth="120.0" text="System users :">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label layoutX="88.0" layoutY="29.0" prefHeight="25.0" prefWidth="54.0" text="Persons " />
+                <Label layoutX="88.0" layoutY="41.0" prefHeight="25.0" prefWidth="68.0" text="Companies" />
+                <Label fx:id="zmoniuSkaicius" layoutX="156.0" layoutY="29.0" prefHeight="25.0" prefWidth="101.0" />
+                <Label fx:id="imoniuSkaicius" layoutX="156.0" layoutY="41.0" prefHeight="25.0" prefWidth="101.0" />
+            </children>
+        </Pane>
+        <Pane fx:id="paspaustasProjektai" layoutX="302.0" layoutY="147.0" onMouseClicked="#eitiProjektuLangan" prefHeight="239.0" prefWidth="284.0" style="-fx-background-color: white;">
+            <children>
+                <BarChart fx:id="stulpelineDiagrama" layoutX="9.0" layoutY="64.0" prefHeight="164.0" prefWidth="266.0" style="-fx-background-color: #f7f6f2; -fx-border-color: crimson;">
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </BarChart>
+                <Label layoutX="10.0" layoutY="7.0" prefHeight="26.0" prefWidth="120.0" text="Projects/tasks">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label layoutX="87.0" layoutY="26.0" prefHeight="25.0" prefWidth="54.0" text="Projects" />
+                <Label layoutX="87.0" layoutY="39.0" prefHeight="25.0" prefWidth="68.0" text="Tasks" />
+                <Label fx:id="projektuSkaicius" layoutX="155.0" layoutY="26.0" prefHeight="25.0" prefWidth="101.0" />
+                <Label fx:id="uzduociuSkaicius" layoutX="155.0" layoutY="39.0" prefHeight="25.0" prefWidth="101.0" />
+            </children>
+        </Pane>
+        <Pane layoutX="298.0" layoutY="37.0" prefHeight="108.0" prefWidth="284.0" style="-fx-background-color: white;">
+            <children>
+                <Label layoutX="14.0" layoutY="14.0" prefHeight="34.0" prefWidth="101.0" text="Logged as :">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="vardoVieta" alignment="CENTER" layoutX="115.0" layoutY="14.0" prefHeight="34.0" prefWidth="161.0" textAlignment="CENTER" textFill="#27099e">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Button fx:id="atsijungimoMygtukas" layoutX="73.0" layoutY="65.0" mnemonicParsing="false" onAction="#atsijungti" prefHeight="25.0" prefWidth="139.0" text="Log out" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

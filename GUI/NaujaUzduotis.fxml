@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.NaujaUzduotis">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="613.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <ChoiceBox fx:id="projektoKurimoPasirinkimai" layoutX="23.0" layoutY="85.0" prefHeight="18.0" prefWidth="565.0" />
+      <Label layoutX="23.0" layoutY="53.0" prefHeight="25.0" prefWidth="150.0" text="Add new...">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="187.0" prefHeight="26.0" prefWidth="119.0" text="Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="256.0" layoutY="188.0" prefHeight="25.0" prefWidth="245.0" promptText="Enter name here.." />
+      <Label layoutX="147.0" layoutY="235.0" prefHeight="26.0" prefWidth="119.0" text="Project ID">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="projectId" layoutX="256.0" layoutY="236.0" prefHeight="25.0" prefWidth="245.0" promptText="Enter Project ID here.." />
+      <Label alignment="CENTER" layoutX="145.0" layoutY="123.0" prefHeight="50.0" prefWidth="323.0" text="Creating new task">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="naujoObjektoMygtukas" layoutX="193.0" layoutY="304.0" mnemonicParsing="false" onAction="#sukurtiObjekta" prefHeight="25.0" prefWidth="202.0" text="Create" />
+      <Button fx:id="gryztiAtgalP" layoutX="23.0" layoutY="361.0" mnemonicParsing="false" onAction="#gryztiProjektuLangan" prefHeight="25.0" prefWidth="64.0" text="Back" />
+   </children>
+</AnchorPane>

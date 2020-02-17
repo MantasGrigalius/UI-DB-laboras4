@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ProjektuLangasController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="605.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <ChoiceBox fx:id="projektoLentelesPasirinkimai" layoutX="14.0" layoutY="41.0" prefWidth="150.0" />
+      <TextField fx:id="filtroLaukas" layoutX="187.0" layoutY="41.0" onKeyTyped="#filtruotiLentele" promptText="Enter name..." />
+      <TableView fx:id="projektuLentele" layoutX="11.0" layoutY="76.0" prefHeight="274.0" prefWidth="577.0">
+         <columns>
+            <TableColumn fx:id="idStulpelis" prefWidth="65.0" text="ID" />
+            <TableColumn fx:id="vardoStulpelis" prefWidth="511.0" text="Name" />
+         </columns>
+      </TableView>
+      <Button fx:id="gryzimoMygtukasP" layoutX="15.0" layoutY="361.0" mnemonicParsing="false" onAction="#gryztiPagrindiniLanganP" prefHeight="25.0" prefWidth="64.0" text="Back" />
+      <Button fx:id="naujoObjektoMygtukas" layoutX="392.0" layoutY="361.0" mnemonicParsing="false" onAction="#kurtiNaujaObjekta" prefHeight="25.0" prefWidth="196.0" text="New object" />
+      <Button fx:id="editMygtukas" layoutX="164.0" layoutY="361.0" mnemonicParsing="false" onAction="#redaguotiInformacija" prefHeight="25.0" prefWidth="196.0" text="Edit data" />
+   </children>
+</AnchorPane>

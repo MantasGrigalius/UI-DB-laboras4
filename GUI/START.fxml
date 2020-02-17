@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.STARTController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="175.0" layoutY="79.0" prefHeight="48.0" prefWidth="251.0" text="LOGIN" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="64.0" />
+         </font>
+      </Label>
+      <TextField fx:id="slapyvardzioLaukas" layoutX="175.0" layoutY="167.0" prefHeight="25.0" prefWidth="251.0" promptText="Prisijungimo vardas" />
+      <Button fx:id="prisijungimoMygtukas" layoutX="177.0" layoutY="267.0" mnemonicParsing="false" onAction="#prisijungti" prefHeight="25.0" prefWidth="251.0" text="Log in" />
+      <PasswordField fx:id="slaptazodzioLaukas" layoutX="175.0" layoutY="217.0" prefHeight="25.0" prefWidth="251.0" promptText="Slaptazodis" />
+   </children>
+</AnchorPane>

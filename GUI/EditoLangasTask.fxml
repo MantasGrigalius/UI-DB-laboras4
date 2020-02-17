@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.EditoLangasTaskController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="615.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label layoutX="25.0" layoutY="51.0" prefHeight="32.0" prefWidth="125.0" text="Edit task data">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idLaukas" layoutX="25.0" layoutY="88.0" onKeyTyped="#gautiDuomenis" promptText="Type user ID here..." />
+      <Pane layoutX="26.0" layoutY="146.0" prefHeight="144.0" prefWidth="563.0" style="-fx-border-color: LightGrey;">
+         <children>
+            <Label fx:id="senoVardoLaukas" alignment="CENTER" layoutX="50.0" layoutY="37.0" prefHeight="21.0" prefWidth="149.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="trynimoMygtukas" layoutX="360.0" layoutY="35.0" mnemonicParsing="false" onAction="#trintiVartotoja" prefHeight="25.0" prefWidth="149.0" text="Complete task" />
+         </children>
+      </Pane>
+      <Button fx:id="gryztiAtgalMygtukas" layoutX="25.0" layoutY="361.0" mnemonicParsing="false" onAction="#gryztiProjektuLangan" prefHeight="25.0" prefWidth="64.0" text="Back" />
+   </children>
+</AnchorPane>

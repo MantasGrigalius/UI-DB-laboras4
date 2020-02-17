@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.UzduociuLangasController">
+    <children>
+        <TableView fx:id="uzduociuLentele" layoutX="14.0" layoutY="76.0" prefHeight="272.0" prefWidth="580.0">
+            <columns>
+                <TableColumn fx:id="idStulpelis" prefWidth="37.0" text="ID" />
+                <TableColumn fx:id="vardoStulpelis" prefWidth="252.0" text="Task name" />
+                <TableColumn fx:id="kurejoStulpelis" prefWidth="140.0" text="Created by " />
+                <TableColumn fx:id="aktyvumoStulpelis" prefWidth="75.0" text="Finished" />
+                <TableColumn fx:id="subStulpelis" prefWidth="75.0" text="Sub Tasks" />
+            </columns>
+        </TableView>
+        <MenuBar prefHeight="25.0" prefWidth="610.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <ChoiceBox fx:id="projektoLentelesPasirinkimai" layoutX="16.0" layoutY="41.0" prefWidth="150.0" />
+        <TextField fx:id="filtroLaukas" layoutX="189.0" layoutY="41.0" onKeyTyped="#filtruotiLentele" promptText="Enter name..." />
+        <Button fx:id="gryzimoMygtukasP" layoutX="16.0" layoutY="361.0" mnemonicParsing="false" onAction="#gryztiPagrindiniLanganP" prefHeight="25.0" prefWidth="64.0" text="Back" />
+        <Button fx:id="naujoObjektoMygtukas" layoutX="400.0" layoutY="361.0" mnemonicParsing="false" onAction="#kurtiNaujaObjekta" prefHeight="25.0" prefWidth="196.0" text="New object" />
+        <Button fx:id="editMygtukas" layoutX="175.0" layoutY="361.0" mnemonicParsing="false" onAction="#redaguotiInformacija" prefHeight="25.0" prefWidth="196.0" text="Edit data" />
+    </children>
+</AnchorPane>

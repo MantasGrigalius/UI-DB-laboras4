@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.NaujasZmogusController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="613.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <ChoiceBox fx:id="projektoKurimoPasirinkimai" layoutX="23.0" layoutY="61.0" prefHeight="18.0" prefWidth="545.0" />
+      <Label layoutX="23.0" layoutY="35.0" prefHeight="25.0" prefWidth="150.0" text="Add new...">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="148.0" prefHeight="26.0" prefWidth="119.0" text="Username">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="223.0" layoutY="149.0" prefHeight="25.0" prefWidth="245.0" promptText="Enter username here.." />
+      <Label layoutX="98.0" layoutY="183.0" prefHeight="26.0" prefWidth="119.0" text="Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="password" layoutX="223.0" layoutY="188.0" prefHeight="25.0" prefWidth="245.0" promptText="Enter password here.." />
+      <Label layoutX="98.0" layoutY="221.0" prefHeight="26.0" prefWidth="119.0" text="Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="223.0" layoutY="222.0" prefHeight="25.0" prefWidth="245.0" promptText="Enter name here.." />
+      <TextField fx:id="surname" layoutX="223.0" layoutY="258.0" prefHeight="25.0" prefWidth="245.0" promptText="Enter surname here.." />
+      <Label layoutX="98.0" layoutY="257.0" prefHeight="26.0" prefWidth="119.0" text="Surname">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="145.0" layoutY="93.0" prefHeight="36.0" prefWidth="295.0" text="Creating new person">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="sukurimoMygtukas" layoutX="206.0" layoutY="301.0" mnemonicParsing="false" onAction="#sukurtiVartotoja" prefHeight="25.0" prefWidth="202.0" text="Create" />
+      <Button fx:id="gryztiAtgalV" layoutX="23.0" layoutY="361.0" mnemonicParsing="false" onAction="#gryztiVartotojuLangan" prefHeight="25.0" prefWidth="64.0" text="Back" />
+   </children>
+</AnchorPane>

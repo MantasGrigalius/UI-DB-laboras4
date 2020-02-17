@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.EditoLangasCompanyController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="615.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label layoutX="25.0" layoutY="51.0" prefHeight="32.0" prefWidth="149.0" text="Edit company data">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idLaukas" layoutX="25.0" layoutY="88.0" onKeyTyped="#gautiDuomenis" promptText="Type user ID here..." />
+      <Pane layoutX="26.0" layoutY="146.0" prefHeight="144.0" prefWidth="563.0" style="-fx-border-color: LightGrey;">
+         <children>
+            <Label alignment="CENTER" layoutX="245.0" layoutY="37.0" prefHeight="21.0" prefWidth="73.0" text="change to">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="naujoVardoLaukas" layoutX="365.0" layoutY="35.0" promptText="Enter new name here..." />
+            <TextField fx:id="senoVardoLaukas" editable="false" layoutX="51.0" layoutY="35.0" />
+         </children>
+      </Pane>
+      <Button fx:id="gryztiAtgalMygtukas" layoutX="25.0" layoutY="361.0" mnemonicParsing="false" onAction="#gryztiVartotojuLangan" prefHeight="25.0" prefWidth="64.0" text="Back" />
+      <Button fx:id="saugojimoMygtukas" layoutX="391.0" layoutY="88.0" mnemonicParsing="false" onAction="#saugotiPakeitimus" prefHeight="25.0" prefWidth="149.0" text="Save" />
+      <Button fx:id="trynimoMygtukas" layoutX="391.0" layoutY="361.0" mnemonicParsing="false" onAction="#trintiVartotoja" prefHeight="25.0" prefWidth="149.0" text="Delete user" />
+   </children>
+</AnchorPane>
